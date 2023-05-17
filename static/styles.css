@@ -1,0 +1,64 @@
+/* styles.css */
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Form styles */
+form {
+  margin: 20px 0;
+  text-align: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Result styles */
+.result {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.result h2 {
+  margin: 0;
+}
+
+.result p {
+  margin: 10px 0;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}

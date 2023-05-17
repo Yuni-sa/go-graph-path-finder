@@ -1,0 +1,38 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Shortest Path Finder</title>
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4 mb-4">Shortest Path Finder</h1>
+        <form action="/" method="post">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="start">Start Location</label>
+                    <input type="text" class="form-control" id="start" name="start" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="end">End Location</label>
+                    <input type="text" class="form-control" id="end" name="end" required>
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Find Shortest Path</button>
+        </form>
+        {{if .Path}}
+            <div class="mt-4">
+                <h4>Shortest Path from {{.StartLocation}} to {{.EndLocation}}</h4>
+                <p>Path: {{range .Path}}{{.}} {{end}}</p>
+                <p>Weight: {{.Weight}}</p>
+                <p><strong>Time Taken:</strong> {{.Duration.String}}</p>
+            </div>
+        {{end}}
+    </div>
+    <script src="/static/bootstrap.bundle.min.js"></script>
+</body>
+</html>
